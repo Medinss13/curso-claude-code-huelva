@@ -32,7 +32,7 @@ Al empezar una sesión nueva, la aplicación te pide en qué carpeta trabajar. E
 **5. Escribe `hola`.**
 Si te contesta *«¡Hola! Te doy la bienvenida al curso Investigación en Economía asistida por IA…»*, ya está todo listo. No hagas nada más: el resto lo hacemos juntos en clase.
 
-📺 **Tutorial en vídeo de la instalación de Claude Code**: [youtube.com/watch?v=i28w2nyfhLg](https://www.youtube.com/watch?v=i28w2nyfhLg&t=555s) (el enlace te lleva directamente a la parte de la instalación).
+📺 **Tutorial en vídeo de la instalación de Claude Code**: [youtube.com/watch?v=i28w2nyfhLg](https://www.youtube.com/watch?v=i28w2nyfhLg).
 
 ## Para el viernes 20: Stata, LaTeX y VS Code
 
