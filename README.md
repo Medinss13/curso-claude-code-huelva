@@ -18,7 +18,7 @@ Todo el curso se hace con la **aplicación de escritorio de Claude** (Windows o 
 ## Instalación paso a paso
 
 **1. Descarga esta carpeta.**
-Pulsa el botón verde **«Code»** de esta página → **«Download ZIP»**. Descomprime el archivo en un sitio fácil de encontrar, por ejemplo en *Documentos*. Te quedará una carpeta llamada `curso-claude-code-huelva`.
+Pulsa el botón verde **«Code»** de esta página → **«Download ZIP»**. Descomprime el archivo en un sitio fácil de encontrar, por ejemplo en *Documentos*. Te quedará una carpeta llamada `curso-claude-code-huelva-main` (el «-main» lo añade GitHub; puedes dejarlo o quitarlo).
 
 **2. Instala la aplicación de escritorio de Claude.**
 Descárgala desde [claude.ai/download](https://claude.ai/download), instálala con las opciones por defecto e inicia sesión con tu cuenta de Claude.
@@ -27,7 +27,7 @@ Descárgala desde [claude.ai/download](https://claude.ai/download), instálala c
 Arriba, en la aplicación, verás las pestañas *Chat* y *Code*. Pulsa **Code**: es donde vive Claude Code.
 
 **4. Elige la carpeta del curso.**
-Al empezar una sesión nueva, la aplicación te pide en qué carpeta trabajar. Elige la carpeta `curso-claude-code-huelva` que descomprimiste en el paso 1 (la carpeta entera, no un archivo de dentro).
+Al empezar una sesión nueva, la aplicación te pide en qué carpeta trabajar. Elige la carpeta `curso-claude-code-huelva-main` que descomprimiste en el paso 1 (la carpeta entera, no un archivo de dentro).
 
 **5. Escribe `hola`.**
 Si te contesta *«¡Hola! Te doy la bienvenida al curso Investigación en Economía asistida por IA…»*, ya está todo listo. No hagas nada más: el resto lo hacemos juntos en clase.
@@ -49,7 +49,7 @@ No hace falta que lo instales solo: el jueves, el `/paso-7` comprueba qué tiene
 
 ## Si algo no funciona
 
-- **No aparece la bienvenida, sino una respuesta normal de Claude**: comprueba que en el paso 4 elegiste la carpeta `curso-claude-code-huelva` y no la carpeta de encima (por ejemplo, *Documentos*).
+- **No aparece la bienvenida, sino una respuesta normal de Claude**: comprueba que en el paso 4 elegiste la carpeta del curso (`curso-claude-code-huelva-main`) y no la de encima (por ejemplo, *Documentos*).
 - **No ves la pestaña «Code» o te dice que tu plan no la incluye**: hace falta el plan Pro o superior. Comprueba también que tienes la aplicación actualizada.
 - **En Windows te pide instalar Git**: te falta Git for Windows (ver «Lo que necesitas»). Instálalo y vuelve a abrir la aplicación.
 

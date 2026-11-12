@@ -17,7 +17,7 @@ Tu trabajo es resolverlo con calma, **de una cosa en una**, explicando cada paso
    - **Acaba de instalar algo y «no lo encuentra»**: el programa no está en el PATH de esta sesión → abrir una sesión nueva (o reiniciar VS Code). En Windows, si sigue sin aparecer, busca el ejecutable en su ruta habitual y úsalo con la ruta completa.
    - **No tiene permisos de administrador** (ordenador de la universidad): instalar en modo usuario cuando se pueda (MiKTeX y VS Code lo permiten) o dejarlo para casa.
    - **Claude Code dice que su plan no lo incluye**: hace falta Claude Pro o superior.
-   - **No sale la bienvenida al curso**: no ha abierto la carpeta `curso-claude-code-huelva` entera, sino otra.
+   - **No sale la bienvenida al curso**: no ha abierto la carpeta del curso entera (`curso-claude-code-huelva-main` si la descargó en ZIP), sino otra.
    - **MiKTeX no compila por un paquete**: activar en *MiKTeX Console → Settings* que instale los paquetes que falten automáticamente.
    - **Mac pide una contraseña**: la escribe ella en la ventana del sistema, nunca en el chat.
    - **`code` no funciona en el terminal**: instalar las extensiones desde VS Code (`Ctrl+Shift+X`) o aceptar el aviso de «extensiones recomendadas» al abrir la carpeta.
