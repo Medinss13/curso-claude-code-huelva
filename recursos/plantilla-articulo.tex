@@ -1,0 +1,75 @@
+% =====================================================================
+% Plantilla del artículo del curso (viernes, /paso-11).
+% Todas las cifras salen de ../resultados/numeros.tex, que escribe Stata.
+% Regla: en este archivo no se teclea ningún número de un resultado.
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish,es-noshorthands,es-tabla,es-nodecimaldot]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[authoryear,round]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+% Las cifras del texto: las escribe Stata en el /paso-10
+\input{../resultados/numeros.tex}
+
+\title{La entrada de genéricos y el precio de los medicamentos de marca:\\
+evidencia de un panel de diez principios activos}
+\author{[NOMBRE]\\ \small Curso «Investigación en Economía asistida por IA», Universidad de Huelva}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent Este trabajo estudia cómo cambia el precio de un medicamento de marca cuando entran competidores genéricos. Con un panel de \nmedicamentos{} medicamentos y \nobs{} observaciones, estimamos una regresión con efectos fijos de medicamento y de año. La entrada de genéricos se asocia con un precio alrededor de un \caidagenerico\,\% más bajo. \textbf{Los datos son ficticios}: el ejercicio sirve para practicar el flujo de trabajo, no para sacar conclusiones.
+\end{abstract}
+
+\section{Introducción}
+
+La competencia de los genéricos es uno de los mecanismos principales para contener el gasto farmacéutico. La literatura documenta que el precio de los genéricos cae a medida que aumenta el número de competidores \citep{reiffen2005}, mientras que el precio del medicamento de marca no siempre baja tras la entrada e incluso puede subir \citep{grabowski1992,frank1997}. Este trabajo aporta un ejercicio con un panel en el que la entrada se produce en años distintos para cada medicamento.
+
+\section{Datos}
+
+Usamos un panel ficticio de \nmedicamentos{} medicamentos de marca observados cada año entre 2019 y 2023 (\nobs{} observaciones). Para cada medicamento y año disponemos del precio por envase, el número de envases vendidos, si ya hay genéricos en el mercado y el número de laboratorios que lo comercializan.
+
+\section{Estrategia empírica}
+
+Estimamos
+\begin{equation}
+\log(\text{precio}_{it}) = \beta_1\, \text{genérico}_{it} + \beta_2\, \text{laboratorios}_{it} + \alpha_i + \gamma_t + \varepsilon_{it},
+\end{equation}
+donde $\alpha_i$ son efectos fijos de medicamento y $\gamma_t$ efectos fijos de año. Los primeros recogen las diferencias permanentes entre productos; los segundos, los cambios comunes a todos. El diseño no permite una lectura causal: el momento de la entrada puede responder a características del mercado que también afectan al precio.
+
+\section{Resultados}
+
+\begin{table}[htbp]
+\centering
+\caption{Entrada de genéricos y logaritmo del precio del medicamento de marca}
+\label{tab:principal}
+\input{../resultados/tablas/tabla1.tex}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{../resultados/figuras/figura1.pdf}
+\caption{Precio medio (en logaritmos) de los medicamentos que reciben genéricos y de los que no}
+\label{fig:precios}
+\end{figure}
+
+% [RESULTADOS] Este párrafo lo redacta Claude en el /paso-11,
+% usando solo las macros de ../resultados/numeros.tex.
+
+\section{Conclusiones}
+
+En este panel ficticio, la entrada de genéricos va asociada a precios de marca más bajos. Con datos reales, una conclusión así exigiría una estrategia de identificación creíble, comprobar la robustez de los resultados y discutir por qué difieren de los de \citet{grabowski1992}.
+
+\bibliographystyle{apalike}
+\bibliography{referencias}
+
+\end{document}

@@ -1,0 +1,10 @@
+# Lo que se genera al hacer el curso: no se sube al repositorio
+notas/
+codigo/
+resultados/
+mi-investigacion/
+papers/*.pdf
+.claude/settings.local.json
+.claude/skills/ficha-paper/
+articulo/
+*.log
